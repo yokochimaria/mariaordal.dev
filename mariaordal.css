@@ -1,6 +1,66 @@
+@font-face {
+	font-family: "Suisse Int'l Mono";
+	src: url("../fonts/008acf881eac29f0c639b8e2345a1764.eot"); /* IE9*/
+	src: url("../fonts/008acf881eac29f0c639b8e2345a1764.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */ url("../fonts/008acf881eac29f0c639b8e2345a1764.woff2")
+			format("woff2"),
+		/* chrome、firefox */ url("../fonts/008acf881eac29f0c639b8e2345a1764.woff")
+			format("woff"),
+		/* chrome、firefox */ url("../fonts/008acf881eac29f0c639b8e2345a1764.ttf")
+			format("truetype"),
+		/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+			url("../fonts/008acf881eac29f0c639b8e2345a1764.svg#Suisse Int'l Mono")
+			format("svg"); /* iOS 4.1- */
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
     font-family: Graphik, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+    background-color: #F9F6F6;
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    max-width: 1440px;
+}
+
+.test-container {
+    display: flex;
+}
+
+.navbar-brand {
+    color: #2B2928 !important;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.navbar {
+    padding: 16px 0 16px 0;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+.nav-link {
+    padding: 8px 0 8px 30px !important;
+    margin: 0; 
+}
+.nav-link:hover {
+    color: #B52B2B;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.suisse-caps {
+    color: #7A6565;
+    font-family: "Suisse Int'l Mono";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
 }
