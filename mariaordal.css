@@ -1,17 +1,10 @@
 @font-face {
 	font-family: "Suisse Int'l Mono";
-	src: url("../fonts/008acf881eac29f0c639b8e2345a1764.eot"); /* IE9*/
-	src: url("../fonts/008acf881eac29f0c639b8e2345a1764.eot?#iefix")
-			format("embedded-opentype"),
-		/* IE6-IE8 */ url("../fonts/008acf881eac29f0c639b8e2345a1764.woff2")
-			format("woff2"),
-		/* chrome、firefox */ url("../fonts/008acf881eac29f0c639b8e2345a1764.woff")
-			format("woff"),
-		/* chrome、firefox */ url("../fonts/008acf881eac29f0c639b8e2345a1764.ttf")
-			format("truetype"),
-		/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-			url("../fonts/008acf881eac29f0c639b8e2345a1764.svg#Suisse Int'l Mono")
-			format("svg"); /* iOS 4.1- */
+	src: url("fonts/SuisseIntlMono-Regular-WebS.woff") format("woff"),
+         url("fonts/SuisseIntlMono-Regular-WebS.woff2") format("woff2"),
+         url("fonts/SuisseIntlMono-Regular-WebXL.woff") format("woff"),
+         url("fonts/SuisseIntlMono-Regular-WebXL.woff2") format("woff2"); 
+			
 	font-weight: normal;
 	font-style: normal;
 }
