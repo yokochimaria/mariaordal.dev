@@ -1,13 +1,48 @@
 @font-face {
 	font-family: "Suisse Int'l Mono";
 	src: url("fonts/SuisseIntlMono-Regular-WebS.woff") format("woff"),
-         url("fonts/SuisseIntlMono-Regular-WebS.woff2") format("woff2"),
-         url("fonts/SuisseIntlMono-Regular-WebXL.woff") format("woff"),
-         url("fonts/SuisseIntlMono-Regular-WebXL.woff2") format("woff2"); 
+         url("fonts/SuisseIntlMono-Regular-WebS.woff2") format("woff2");
 			
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: "Graphik";
+	src: url("fonts/Graphik-Regular.woff") format("woff"),
+         url("fonts/Graphik-Regular.woff2") format("woff2");
+			
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Graphik";
+	src: url("fonts/Graphik-RegularItalic.woff") format("woff"),
+         url("fonts/Graphik-RegularItalic.woff2") format("woff2");
+			
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Graphik";
+	src: url("fonts/Graphik-Semibold.woff") format("woff"),
+         url("fonts/Graphik-Semibold.woff") format("woff2");
+			
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Graphik";
+	src: url("fonts/Graphik-SemiboldItalic.woff") format("woff"),
+         url("fonts/Graphik-SemiboldItalic.woff2") format("woff2");
+			
+	font-weight: 600;
+	font-style: italic;
+}
+
 
 body {
     font-family: Graphik, sans-serif;
