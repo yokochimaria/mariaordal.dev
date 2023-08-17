@@ -37,16 +37,14 @@ document.addEventListener('scroll', () => {
 
 // ACCORDION
 function toggleContent(event) {
-    const session = event.currentTarget.closest('.session'); // Find the parent "session" div
-    const content = session.querySelector('.content'); // The content div inside the "session" div
-    const arrowContainer = session.querySelector('.arrow-container'); // The arrow container
+    const session = event.currentTarget.closest('.session'); 
+    const content = session.querySelector('.content'); 
+    const arrowContainer = session.querySelector('.arrow-container');
     
-    // Toggle the "active" class on the content div
     content.classList.toggle('active');
     arrowContainer.classList.toggle('active');
 }
 
-// Add click event listener to all elements with the class "visible"
 const visibleElements = document.querySelectorAll('.visible');
 visibleElements.forEach(visibleElement => {
     visibleElement.addEventListener('click', toggleContent);
