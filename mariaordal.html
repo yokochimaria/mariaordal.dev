@@ -14,36 +14,40 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
  
-    <div class="page container-fluid">
-        <!-- HEADER -->
-        <div class="section-container">
-            <header>
-                <nav class="navbar navbar-expand-md">
-                    <a class="navbar-brand" href="#" style="display: flex;">
-                        <img class="icon-sm-nav" src="/images/icon-sm-nav.svg">
-                        <span class="sm-none" style="padding: 3px 0 0 10px">Maria Yokochi Ordal</span>
-                    </a>
-                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-                        <img id="nav-icon" src="/images/icon-nav-hamburger-open.svg" data-open-src="/images/icon-nav-hamburger-close.svg">
-                    </button>
-                    
-                    <div class="collapse navbar-collapse" id="main-navigation">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link suisse-caps" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link suisse-caps" href="#experience">Experience</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link suisse-caps" href="#connect">Connect</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
+    <!-- HEADER -->
+    <div class="header-bg-sm">
+        <div class="page container-fluid">
+            <div class="section-container-nav">
+                <header>
+                    <nav class="navbar navbar-expand-md">
+                        <a class="navbar-brand" href="#" style="display: flex;">
+                            <img class="icon-sm-nav" src="/images/icon-sm-nav.svg">
+                            <span class="sm-none" style="padding: 3px 0 0 10px">Maria Yokochi Ordal</span>
+                        </a>
+                        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                            <img id="nav-icon" src="/images/icon-nav-hamburger-open.svg" data-open-src="/images/icon-nav-hamburger-close.svg">
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="main-navigation">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link suisse-caps" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link suisse-caps" href="#experience">Experience</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link suisse-caps" href="#connect">Connect</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+            </div>
         </div>
-    
+    </div>
+        
+    <div class="page container-fluid">
         <!-- HERO SECTION -->
         <div class="section-container">
             <div class="row">
@@ -463,14 +467,14 @@
                         <h2 style="color: #7A6565">Designed & coded with <3</h2>
                         <div class="suisse-caps" style="padding-bottom: 35px">by Maria Yokochi Ordal</div>
 
-                        <a class="suisse-caps" style="margin-left: 0" href="https://github.com/yokochimaria" target="_blank">GitHub</a>
+                        <a class="suisse-caps" href="https://github.com/yokochimaria" target="_blank">GitHub</a>
                         <span class="suisse-caps sm-none">•</span>
                         <a class="suisse-caps" href="https://www.linkedin.com/in/maria-yokochi-ordal/" target="_blank">LinkedIn</a>
                         <span class="suisse-caps sm-none">•</span>
-                        <a class="suisse-caps" style="margin-right: 0" href="https://drive.google.com/file/d/1mQTJwZpoJd7Y418GCktSzK9GFBKKTZ4h/view?usp=sharing" target="_blank">Resume</a>
+                        <a class="suisse-caps " style="margin-right: 0" href="https://drive.google.com/file/d/1mQTJwZpoJd7Y418GCktSzK9GFBKKTZ4h/view?usp=sharing" target="_blank">Resume</a>
                         <img src="/images/icon-emphasis.svg" style="margin-bottom: 15px">
                     </div>
-                    <div class="col-6 designer-developer" style="text-align: right;">
+                    <div class="col-6" style="text-align: right;">
                         <img src="/images/designer-developer-footer.svg">
                     </div>
                 </div>
@@ -483,12 +487,46 @@
         $(document).ready(function() {
         $('#main-navigation').on('show.bs.collapse', function () {
             $('#nav-icon').attr('src', $('#nav-icon').data('open-src'));
+            $('.header-bg-sm').addClass('open');
+            $('#nav-icon').attr('src', $('#nav-icon').data('open-src'));
         });
         
         $('#main-navigation').on('hide.bs.collapse', function () {
             $('#nav-icon').attr('src', '/images/icon-nav-hamburger-open.svg');
+            $('.header-bg-sm').removeClass('open');
+            $('#nav-icon').attr('src', '/images/icon-nav-hamburger-open.svg');
         });
         });
+
+        $('a.nav-link').on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 20, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+
+       /*  $(document).ready(function() {
+            $('a.nav-link').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, {
+                        duration: 800,
+                        easing: 'easeInOutCubic', // Use the ease-in-out timing function
+                        complete: function() {
+                            window.location.hash = hash;
+                        }
+                    });
+                }
+            });
+        }); */
     </script>
     
     
