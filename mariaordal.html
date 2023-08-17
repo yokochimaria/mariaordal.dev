@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria Yokochi Ordal</title>
-    <link href="https://db.onlinewebfonts.com/c/008acf881eac29f0c639b8e2345a1764?family=Suisse+Int%27l+Mono" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="mariaordal.css">
 </head>
@@ -12,18 +11,22 @@
 
     <script src="jquery-3.5.1.min.js"></script>
     <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+ 
     <div class="page container-fluid">
-        <div class="col-12">
+        <!-- HEADER -->
+        <div class="section-container">
             <header>
                 <nav class="navbar navbar-expand-md">
-                    <a class="navbar-brand" href="#">
-                        <img src="/images/icon-small-1.svg">
-                        Maria Yokochi Ordal
+                    <a class="navbar-brand" href="#" style="display: flex;">
+                        <img class="icon-sm-nav" src="/images/icon-sm-nav.svg">
+                        <span class="sm-none" style="padding: 3px 0 0 10px">Maria Yokochi Ordal</span>
                     </a>
                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <img id="nav-icon" src="/images/icon-nav-hamburger-open.svg" data-open-src="/images/icon-nav-hamburger-close.svg">
                     </button>
+                    
                     <div class="collapse navbar-collapse" id="main-navigation">
                         <ul class="navbar-nav">
                             <li class="nav-item">
@@ -41,35 +44,500 @@
             </header>
         </div>
     
-        <section id="about">
-            <div class="test-container">
-                <div class="col-1 suisse-large">
-                    01.
+        <!-- HERO SECTION -->
+        <div class="section-container">
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-sm-12">
+                    <div class="hero-tertiary">
+                        Nice to meet you! I’m
+                    </div>
+                    <div class="hero-primary">
+                        Maria Yokochi Ordal
+                    </div>
+                    <div class="hero-secondary">
+                        <span class="light-weight">/ </span>横地真理亜
+                    </div>
+                    <p>
+                        I’m a rising junior at Wellesley College double-majoring in Computer Science and Mathematics. I’m a 
+                        rising junior at Wellesley College double-majoring in Computer Science and Mathematics. I’m most 
+                        happy when I get to wear many hats.
+                    </p>
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-12">
-                    <h2>Who I am</h2>
-                    <p>I’m most happy when I get to wear many hats. I love being able to holistically work on projects and. Ultimately, all I want is to contribute to making products that users interact with more intuitive, functional, and attractive.
+                <div class="col-lg-2 col-md-2 col-sm-12 right-align" style="display: flex; align-items: center;">
+                    <div class="designer-developer">
+                        <img src="/images/designer-developer.svg">
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-12">
+                </div>
+                
+            </div>
+        </div>
 
-                        I’m most happy when I get to wear many hats. I love being able to holistically work on projects and. Ultimately, all I want is to contribute to making products that users interact with more intuitive, functional, and attractive.
-                        
-                        I’m most happy when I get to wear many hats. I love being able to holistically work on projects and. Ultimately, all I want is to contribute to making products that users interact with more intuitive, functional, and attractive.</p>
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <div class="section-container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 sm-none">
+                        <img class="full-width" style="padding-right: 20px; padding-bottom: 10px;" src="/images/img-transp.png">
+                        <p class="suisse-lower">Coming of age photo from when I turned 20!</p>
+                    </div>
+                    <div class="col-1 suisse-large">
+                        01.
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-12">
+                        <h1>Who I am</h1>
+                        <p>
+                            I’m most happy, all I want is to contribute to making products that 
+                            users interact with more intuitive, functional, and attractive.
+                        </p>
+                        <h2>I just might be the biggest Figma enthusiast you’ll ever meet</h2>
+                        <p class="suisse-lower">
+                            Not a joke, I use it ANY OPPORTUNITY where it is remotely possible to use it (resume? yes. need 
+                            to make a program for an org? of course.)
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 sm-display none">
+                        <div style="padding: 0 4rem 10px 4rem;">
+                            <img class="img-with-cap" src="/images/img-transp.png">
+                            <p class="suisse-lower">Coming of age photo from when I turned 20!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax-row">
+            <div class="parallax-layer layer1">
+
+                <div class="parallax-bold">Tea drinker</div>
+                <img class="parallax-icon" src="/images/icon-sm-2.svg">
+                
+                <div class="parallax-suisse-lower">Huge fan of Figma</div>
+                <img class="parallax-icon" src="/images/icon-sm-3.svg">
+
+                <div class="parallax-suisse-caps">Developer</div>
+                <img class="parallax-icon" src="/images/icon-sm-4.svg">
+
+                <div class="parallax-italic">Learner</div>
+                <img class="parallax-icon" src="/images/icon-sm-4.svg">
+                
+                <div class="parallax-bold">Designer</div>
+                <img class="parallax-icon" src="/images/icon-sm-5.svg">
+
+                <div class="parallax-suisse-caps">Systems thinker</div>
+                <img class="parallax-icon" src="/images/icon-sm-5.svg">
+                
+                <div class="parallax-bold">Collaborator</div>
+                <img class="parallax-icon" src="/images/icon-sm-6.svg">
+                
+                <div class="parallax-italic">Versatile</div>
+                <img class="parallax-icon" src="/images/icon-sm-1.svg">
+                
+                <div class="parallax-suisse-caps">UI/UX Designer</div>
+                <img class="parallax-icon" src="/images/icon-sm-3.svg">
+                
+                <div class="parallax-bold">Tea drinker</div>
+                <img class="parallax-icon" src="/images/icon-sm-2.svg">
+                
+                <div class="parallax-suisse-lower">Huge fan of Figma</div>
+
+            </div>
+            <div class="parallax-layer layer2">
+
+                <div class="parallax-bold">Visual storyteller</div>
+                <img class="parallax-icon" src="/images/icon-sm-1.svg">
+
+                <div class="parallax-suisse-lower">Innovator</div>
+                <img class="parallax-icon" src="/images/icon-sm-2.svg">
+
+                <div class="parallax-italic">Problem-solver</div>
+                <img class="parallax-icon" src="/images/icon-sm-3.svg">
+
+                <div class="parallax-suisse-caps">Developer</div>
+                <img class="parallax-icon" src="/images/icon-sm-4.svg">
+                
+                <div class="parallax-bold">Designer</div>
+                <img class="parallax-icon" src="/images/icon-sm-5.svg">
+
+                <div class="parallax-suisse-caps">Front-end engineer</div>
+                <img class="parallax-icon" src="/images/icon-sm-2.svg">
+
+                <div class="parallax-bold">Visual storyteller</div>
+                <img class="parallax-icon" src="/images/icon-sm-1.svg">
+
+                <div class="parallax-suisse-lower">Innovator</div>
+                <img class="parallax-icon" src="/images/icon-sm-5.svg">
+
+                <div class="parallax-italic">Problem-solver</div>
+                <img class="parallax-icon" src="/images/icon-sm-3.svg">
+
+                <div class="parallax-suisse-caps">Developer</div>
+                <img class="parallax-icon" src="/images/icon-sm-4.svg">
+                
+                <div class="parallax-bold">Designer</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="full-width" style="height: 90px"></div>
+        
+    <div class="page container-fluid">
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience">
+            <div class="section-container">
+                <div class="row">
+                    <div class="col-1 suisse-large">
+                        02.
+                    </div>
+                    <div class="col-lg-11 col-md-11 col-sm-12">
+                        <h1>What I've been up to</h1>
+                        <p>I’ve been so lucky to have been able to work on projects and places that I love, and there’s so much 
+                            more that I could say about all of these experiences. Don’t hesitate to reach out if you’re curious 
+                            about any of these! :)</p>
+                    </div>
+                    <div class="col-1 sm-none" style="height: 10px"></div>
+
+                    <!-- ACCORDION -->
+                    <div class="col-lg-11 col-md-11 col-sm-12">
+                        <div class="accordion" style="margin-bottom: 30px;">
+
+                            <!-- SUMMER UROP -->
+                            <hr class="separator"> </hr>
+                            <div class="session flex">
+                                <div class="col-11 pad-left-none" style="width: 100%;">
+    
+                                    <!-- ALWAYS VISIBLE -->
+                                    <div class="visible" >
+                                        <div class="suisse-caps">@ MIT Media Lab</div>
+                                        <h2 class="black">CCC Web Developer and Designer</h2>
+                                    </div>
+    
+                                    <!-- NOT ALWAYS VISIBLE -->
+                                    <div class="content active">
+                                        <p>
+                                            Designed flexible content blocks in Figma aligned with the CCC brand 
+                                            Built these blocks to take ACF fields using HTML, CSS, PHP, and JavaScript
+                                            Implemented new interactive features (post carousels, accordions, auto-populating 
+                                            navigation bar that responds to changing page content)
+                                            Successfully transitioned the CCC site to be made with ACF blocks (instead of 
+                                            being hardcoded) for a code-free and stylistically opinionated user experience for 
+                                            the site’s content editors
+                                        </p>
+
+                                        <!-- THE ORGANIZATION -->
+                                        <p class="bold">The organization</p>
+                                        <div class="full-width row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                <img class="full-width logo" src="/images/logo-ccc.svg">
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                                <p>
+                                                    The MIT Center for Constructive Communication is a subdivision of MIT 
+                                                    Media Lab doing interesting research on NLP and social media and other 
+                                                    interesting smart
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!-- THE TOOLS (PILLS) -->
+                                        <div class="div-tools" style="display: flex;">
+                                            <p class="bold">The tools</p>
+                                            <img class="icon-spin" style="height: 25px; margin-left: 10px;" src="/images/icon-sm-1.svg">
+                                        </div>
+                                        <div class="full-width row">
+                                            <div class="col-12 tool-container" style="display: flex; flex-wrap: wrap; padding-bottom: 15px">
+                                                <span class="tool-pill">HTML</span>
+                                                <span class="tool-pill">CSS</span>
+                                                <span class="tool-pill">Figma</span>
+                                                <span class="tool-pill">Bootstrap</span>
+                                                <span class="tool-pill">Wordpress</span>
+                                                <span class="tool-pill">VS Code</span>
+                                                <span class="tool-pill">ACF</span>
+                                                <span class="tool-pill">PHP</span>
+                                                <span class="tool-pill">JavaScript</span>
+                                                <span class="tool-pill">Understrap</span>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="full-width row">
+
+                                            <div class="col-12 flex div-tools">
+                                                <p class="bold">A peek at the result</p>
+                                                <img class="icon-spin" style="height: 25px; margin-left: 10px;" src="/images/icon-sm-6.svg">
+                                            </div>
+
+                                            <div class="col-lg-8 col-md-8 col-sm-12">
+
+                                                <img class="img-with-cap" src="/images/carousel-img-1.png">
+                                                <p class="suisse-lower">Look at this events & opportunites nav bar!</p>
+                                                    
+                                            </div> 
+
+                                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                                <p>
+                                                    Here’s a little glimpse at what the new auto-populating navigation bar can do. 
+                                                    I can’t get you into the Gutenberg editor to modify content, but visiting the 
+                                                    live site is as close as I can get you :)
+                                                </p>
+                                                <a href="https://www.ccc.mit.edu/" target="_blank">
+                                                    <button class="button-primary suisse-caps">Visit site</button>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                    </div> 
+                                        
+                                </div>
+
+                                <div class="col-1 pad-right-none visible" style="text-align: right;">
+                                    <div class="arrow-container">
+                                        <img src="/images/arrow-img-up.svg">
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                     
+                            <!-- TUTORING WORK -->
+                            <hr class="separator"> </hr>
+                            <div class="session" style="display: flex">
+                                <div class="col-11 pad-left-none" style="width: 100%;">
+    
+                                    <!-- ALWAYS VISIBLE -->
+                                    <div class="visible" >
+                                        <div class="suisse-caps">@ Wellesley College's CS Department</div>
+                                        <h2 class="black">Data Structures Tutor and TA (CS 230)</h2>
+                                    </div>
+    
+                                    <!-- NOT ALWAYS VISIBLE -->
+                                    <div class="content">
+                                        <p>
+                                            do individual tutoring, host office hours, grade problem sets, and help during lab 
+                                            for CS 230, Wellesley's Data Structures course.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-1 pad-right-none visible" style="text-align: right">
+                                    <div class="arrow-container">
+                                        <img src="/images/arrow-img-down.svg">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- CLININTELL -->
+                            <hr class="separator"> </hr>
+                            <div class="session" style="display: flex">
+                                <div class="col-11 pad-left-none" style="width: 100%;">
+    
+                                    <!-- ALWAYS VISIBLE -->
+                                    <div class="visible" >
+                                        <div class="suisse-caps">@ ClinIntell</div>
+                                        <h2 class="black">Digital Design Intern</h2>
+                                    </div>
+    
+                                    <!-- NOT ALWAYS VISIBLE -->
+                                    <div class="content">
+                                        <p>
+                                            Designed flexible content blocks in Figma aligned with the CCC brand 
+                                            Built these blocks to take ACF fields using HTML, CSS, PHP, and JavaScript
+                                            Implemented new interactive features (post carousels, accordions, auto-populating 
+                                            navigation bar that responds to changing page content)
+                                            Successfully transitioned the CCC site to be made with ACF blocks (instead of 
+                                            being hardcoded) for a code-free and stylistically opinionated user experience for 
+                                            the site’s content editors
+                                        </p>
+
+                                        <!-- THE ORGANIZATION -->
+                                        <p class="bold">The organization</p>
+                                        <div class="full-width row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                <img class="full-width logo" src="/images/logo-clinintell.svg">
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                                <p>
+                                                    ClinIntell is a data analytics firm innovating in the clinical documentation improvement industry. Basically, it has to do with hospital inpatient data!
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!-- THE TOOLS (PILLS) -->
+                                        <div class="div-tools" style="display: flex;">
+                                            <p class="bold">The tools (and skills!)</p>
+                                            <img class="icon-spin" style="height: 25px; margin-left: 10px;" src="/images/icon-sm-1.svg">
+                                        </div>
+                                        <div class="full-width row">
+                                            <div class="col-12 tool-container" style="display: flex; flex-wrap: wrap; padding-bottom: 15px">
+                                                <span class="tool-pill">Figma</span>
+                                                <span class="tool-pill">Vyond</span>
+                                                <span class="tool-pill">PowerPoint</span>
+                                                <span class="tool-pill">Word</span>
+                                                <span class="tool-pill">Branding</span>
+                                                <span class="tool-pill">Excel</span>
+                                                <span class="tool-pill">Design thinking</span>
+                                                <span class="tool-pill">Web design</span>
+                                                <span class="tool-pill sm-none">Communication</span>
+                                                <span class="tool-pill sm-none">Collaboration</span>
+                                                <span class="tool-pill sm-none">(yes, I know)</span>
+                                                <span class="tool-pill sm-none">(the last 2 are corny)</span>
+                                                <span class="tool-pill sm-none">(but they're true!!)</span>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="full-width row">
+
+                                            <div class="col-12 flex div-tools">
+                                                <p class="bold">A peek at the result</p>
+                                                <img class="icon-spin" style="height: 25px; margin-left: 10px;" src="/images/icon-sm-6.svg">
+                                            </div>
+
+                                            <div class="col-lg-8 col-md-8 col-sm-12">
+
+                                                <img class="img-with-cap rounded-border" src="/images/screen-clinintell.gif">
+                                                <p class="suisse-lower">Look at this events & opportunites nav bar!</p>
+                                                    
+                                            </div> 
+
+                                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                                <p>
+                                                    Here’s a little glimpse at what the new auto-populating navigation bar can do. 
+                                                    I can’t get you into the Gutenberg editor to modify content, but visiting the 
+                                                    live site is as close as I can get you :)
+                                                </p>
+                                                <a href="https://www.clinintell.com/" target="_blank">
+                                                    <button class="button-primary suisse-caps">Visit site</button>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                    </div> 
+                                </div>
+                                <div class="col-1 pad-right-none visible" style="text-align: right">
+                                    <div class="arrow-container">
+                                        <img src="/images/arrow-img-down.svg">
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     
-        <section id="experience">
-            <h2>Experience</h2>
-            <p>This is the experience section.</p>
-        </section>
-    
+        <!-- CONNECT SECTION -->
         <section id="connect">
-            <h2>Connect</h2>
-            <p>This is the connect section.</p>
+            <div class="section-container" style="padding-bottom: 200px">
+                <div class="row">
+                    <div class="col-1 suisse-large">
+                        03.
+                    </div>
+                    <div class="col-lg-11 col-md-11 col-sm-12">
+                        <h1>Get in touch!</h1>
+                        <p>
+                            My inbox is always open! I am always open to chatting about potential projects, 
+                            things I’ve worked on, shared interests, interpersonal dynamics, or anything in 
+                            between. I’m a big tea drinker, so perhaps we can meet over a cup sometime 
+                            (virtually, unless you’re local to where I happen to be!)
+                        </p>
+                        <button id="emailButton" class="button-primary suisse-caps">Say hi!</button>
+                    </div>
+                </div>
+            </div>
         </section>
-    
-        <footer>
-            <p>&copy; 2023 Your Name</p>
-        </footer>
     </div>
+    
+    <!-- FOOTER -->
+    <footer class="footer full-width">
+        <div class="page container-fluid">
+            <div class="section-container" style="padding-bottom: 10px">
+                <div class="row">
+                    <div class="col-6 footer-links">
+                        <h2 style="color: #7A6565">Designed & coded with <3</h2>
+                        <div class="suisse-caps" style="padding-bottom: 35px">by Maria Yokochi Ordal</div>
+
+                        <a class="suisse-caps" style="margin-left: 0" href="https://github.com/yokochimaria" target="_blank">GitHub</a>
+                        <span class="suisse-caps sm-none">•</span>
+                        <a class="suisse-caps" href="https://www.linkedin.com/in/maria-yokochi-ordal/" target="_blank">LinkedIn</a>
+                        <span class="suisse-caps sm-none">•</span>
+                        <a class="suisse-caps" style="margin-right: 0" href="https://drive.google.com/file/d/1mQTJwZpoJd7Y418GCktSzK9GFBKKTZ4h/view?usp=sharing" target="_blank">Resume</a>
+                        <img src="/images/icon-emphasis.svg" style="margin-bottom: 15px">
+                    </div>
+                    <div class="col-6 designer-developer" style="text-align: right;">
+                        <img src="/images/designer-developer-footer.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- NAV -->
+    <script>
+        $(document).ready(function() {
+        $('#main-navigation').on('show.bs.collapse', function () {
+            $('#nav-icon').attr('src', $('#nav-icon').data('open-src'));
+        });
+        
+        $('#main-navigation').on('hide.bs.collapse', function () {
+            $('#nav-icon').attr('src', '/images/icon-nav-hamburger-open.svg');
+        });
+        });
+    </script>
+    
+    
+    <!-- PARALLAX -->
+    <script>
+        const layer1 = document.querySelector('.layer1');
+        const layer2 = document.querySelector('.layer2');
+        
+        document.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            layer1.style.transform = `translateX(${scrollPosition * 0.5}px)`;
+            layer2.style.transform = `translateX(-${scrollPosition * 0.5}px)`;
+        });
+        </script>
+        
+    <!-- ACCORDION -->
+
+    <script>
+        // Function to toggle the active class on the content div
+        function toggleContent(event) {
+            const session = event.currentTarget.closest('.session'); // Find the parent "session" div
+            const content = session.querySelector('.content'); // The content div inside the "session" div
+            const arrowContainer = session.querySelector('.arrow-container'); // The arrow container
+            
+            // Toggle the "active" class on the content div
+            content.classList.toggle('active');
+            arrowContainer.classList.toggle('active');
+        }
+    
+        // Add click event listener to all elements with the class "visible"
+        const visibleElements = document.querySelectorAll('.visible');
+        visibleElements.forEach(visibleElement => {
+            visibleElement.addEventListener('click', toggleContent);
+        });
+    </script>
+
+    <!-- SAY HI BUTTON -->
+    <script>
+        const emailButton = document.getElementById('emailButton');
+
+        emailButton.addEventListener('click', () => {
+        const recipient = 'mo104@wellesley.edu';
+        const subject = 'Just wanted to say hi :)';
+        const body = 'Hi!\n\nI visited your website and wanted to get in touch about...';
+
+        const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+        });
+    </script>
+
 </body>
 </html>

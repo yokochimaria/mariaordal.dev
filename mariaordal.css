@@ -19,48 +19,415 @@
 body {
     font-family: Graphik, sans-serif;
     background-color: #F9F6F6;
-    display: flex;
     justify-content: center;
 }
 
-.page {
-    max-width: 1440px;
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+/* SECTION: CONTAINERS */
+    .page {
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-12 .col-1 {
+        flex: none !important;
+    }
+
+    .section-container {
+        height: auto;
+        width: 100%;
+        padding: 30px 15px 60px 15px;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .right-align{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .img-with-cap {
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+/* SECTION: EXTENDED (KNOCKOFF) BOOTSTRAP BUT NOT */
+    .none {
+        display: none;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+
+    .pad-left-none {
+        padding-left: 0;
+    }
+
+    .pad-right-none {
+        padding-right: 0;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    
+/* SECTION: NAVIGATION */
+    .navbar-brand {
+        color: #2B2928 !important;
+        font-weight: 600;
+        font-size: 24px;
+    }
+    
+    .navbar {
+        padding: 16px 0 16px 0;
+    }
+    
+    .nav-link,
+    .navbar-brand {
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .nav-link {
+        padding: 8px 0 8px 30px !important;
+        margin: 0; 
+    }
+
+    .nav-link:hover {
+        color: #B52B2B;
+        text-decoration: underline;
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    button:focus {
+        outline: 0;
+    }
+
+/* SECTION: BUTTONS, DIVIDERS, ETC STYLING */
+    .separator {
+        width: 100%;
+        border-color: #887D7D;
+        border-width: 2px;
+        padding-bottom: 20px;
+        margin: 0;
+    }
+
+    .button-primary {
+        display: inline-block;
+        background-color: #F9F6F6;
+        border: 2px solid #887D7D;
+        border-radius: 10px;
+        transition: background-color 0.3s, color 0.3s;
+        text-align: center;
+        padding: 10px 30px 10px 30px;
+    }
+
+    .button-primary:hover {
+        color: #B52B2B;
+        border-color: #B52B2B;
+        background-color: #ECE2E2;
+    }
+
+    .logo {
+        max-width: 200px;
+        padding-bottom: 15px;
+    }
+
+    .tool-pill {
+        color: #7A6565;
+        background-color: #ECE2E2;
+        font-family: "Suisse Int'l Mono";
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 13px;
+        padding: 5px 10px;
+        margin-bottom: 15px;
+        margin-right: 20px;
+        border-radius: 10px;
+        white-space: nowrap;
+    }
+
+    .rounded-border {
+        border-radius: 20px;
+        border-width: 10px;
+        border-color: #887D7D;
+    }
+
+/* SECTION: TYPEOGRAPHY */
+    .hero-primary {
+        color: #BA4347;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 1;
+    }
+    
+    .hero-secondary {
+        color: #BA4347;
+        font-size: 48px;
+        padding-bottom: 40px;
+    }
+
+    .light-weight {
+        font-weight: 300;
+    }
+
+    .hero-tertiary {
+        color: #887D7D;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1;
+        padding-bottom: 8px
+    }
+
+    h1 {
+        color: #BA4347;
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+    h2 {
+        color: #BA4347;
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .black {
+        color: #2B2928;
+    }
+
+    p {
+        color: #2B2928;
+        font-size: 18px;
+        padding-bottom: 25px;
+        margin: 0;
+    }
+
+    .bold {
+        font-weight: 600;
+        padding-bottom: 15px;
+    }
+
+    .suisse-large {
+        color: #887D7D;
+        font-family: "Suisse Int'l Mono";
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 24px;
+    }
+
+    .suisse-caps {
+        color: #7A6565;
+        font-family: "Suisse Int'l Mono";
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+
+    .suisse-lower {
+        color: #7A6565;
+        font-family: "Suisse Int'l Mono";
+        font-size: 12px;
+        padding-bottom: 25px;
+    }
+
+/* SECTION: ANIMATIONs */
+
+    /* LITTLE THINGS */
+    .designer-developer {
+        transition: transform 0.3s ease-in-out;
+        height: 149px;
+    }
+
+    .designer-developer:hover {
+        transform: translate(2px, -2px) scale(1.1) rotate(20deg);
+    }
+
+    .icon-sm-nav, .icon-spin {
+        transition: transform 2.5s;
+    }
+
+    .navbar-brand:hover {
+        .icon-sm-nav {
+            transform: rotate(360deg);
+        }
+    }
+    .div-tools:hover {
+        .icon-spin {
+            transform: rotate(360deg);
+        }
+    }
+    
+    /* PARALLAX */
+
+        .parallax-container {
+            overflow: hidden;
+            height: 12rem; /* container height */
+            position: relative;
+            width: 100%;
+        }
+
+        .parallax-row {
+            display: flex;
+            flex-direction: column;
+            height: 24rem; /* double of container height */
+        }
+
+        .parallax-layer {
+            width: 100%;
+            height: 6rem; /* half of container height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .layer1 {
+            margin-top: 5rem;
+        }
+
+        .parallax-bold {
+            color: #2B2928;
+            font-weight: 600;
+            font-size: 40px;
+            white-space: nowrap;
+        }
+
+        .parallax-italic {
+            color: #2B2928;
+            font-style: italic;
+            font-size: 40px;
+            white-space: nowrap;
+        }
+
+        .parallax-suisse-lower {
+            color: #887D7D;
+            font-family: "Suisse Int'l Mono";
+            letter-spacing: 2px;
+            font-size: 40px;
+            white-space: nowrap;
+        }
+
+        .parallax-suisse-caps {
+            color: #887D7D;
+            font-family: "Suisse Int'l Mono";
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 40px;
+            white-space: nowrap;
+        }
+
+        .parallax-icon {
+            padding: 0 40px 0 40px;
+        }
+
+    /* ACCORDION */
+        .accordion {
+            width: 100%;
+        }
+
+        .session {
+            cursor: pointer;
+            padding-bottom: 20px;
+        }
+
+        .visible {
+            padding-bottom: 20px;
+        }
+
+        .content {
+            display: none;
+            padding-bottom: 30px;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .arrow-container img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .arrow-container.active img {
+            transform: rotate(180deg); /* Rotate the arrow when active */
+        }
+
+/* SMALL SCREEN SIZE */
+    @media (max-width: 767px) {
+        .sm-display {
+            display: block;
+        }
+
+        .sm-none {
+            display: none;
+        }
+
+        .hero-secondary {
+            padding-bottom: 15px;        
+        }
+
+        p, {
+            padding-bottom: 25px;
+        }
+
+        .visible {
+            padding-bottom: 10px;
+        }
+
+        .parallax-bold, .parallax-italic, .parallax-suisse-lower, .parallax-suisse-caps {
+            font-size: 30px;
+        }
+
+        .parallax-icon {
+            height: 30px;
+            padding: 0 20px 0 20px;
+        }
+
+        .nav-link {
+        padding: 20px 0 !important;
+        margin: 0; 
+        }
+
+        .show {
+            background-color: white;
+            transition: background-color 0.5s ;
+        }
+    }
+
+/* FOOTER */
+.footer {
+    background-color: #ECE2E2;
+    padding: 40px 0 20px 0;
 }
 
-.test-container {
-    display: flex;
+.footer-links {
+    margin-bottom: 10px;
 }
 
-.navbar-brand {
-    color: #2B2928 !important;
-    font-weight: 600;
-    font-size: 24px;
-}
-
-.navbar {
-    padding: 16px 0 16px 0;
-}
-
-.nav-link,
-.navbar-brand {
-    color: #fff;
-    cursor: pointer;
-}
-.nav-link {
-    padding: 8px 0 8px 30px !important;
-    margin: 0; 
-}
-.nav-link:hover {
-    color: #B52B2B;
-}
-.navbar-collapse {
-    justify-content: flex-end;
-}
-
-.suisse-caps {
+.footer-links a {
     color: #7A6565;
-    font-family: "Suisse Int'l Mono";
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 13px;
-}
+    text-decoration: none;
+    margin: 0 10px;
+    }
+    
+    .footer-links a:hover {
+    color: #B52B2B;
+    text-decoration: underline;
+    }
+    
