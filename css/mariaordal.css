@@ -219,6 +219,7 @@ body, html {
     }
     
     .hero-secondary {
+        font-family: "Suisse Int'l Mono";
         color: #BA4347;
         font-size: 48px;
         padding-bottom: 40px;
@@ -261,6 +262,11 @@ body, html {
 
     .bold {
         font-weight: 600;
+        padding-bottom: 15px;
+    }
+
+    .italic {
+        font-style: italic;
         padding-bottom: 15px;
     }
 
