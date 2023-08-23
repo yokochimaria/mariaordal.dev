@@ -83,7 +83,7 @@ body, html {
     }
 
     .img-with-cap {
-        padding-bottom: 10px;
+        margin-bottom: 10px;
         width: 100%;
     }
 
@@ -205,9 +205,9 @@ body, html {
     }
 
     .rounded-border {
-        border-radius: 20px;
+        border-radius: 10px;
         border-width: 10px;
-        border-color: #887D7D;
+        border: 2px solid #887D7D;
     }
 
 /* SECTION: TYPEOGRAPHY */
@@ -324,7 +324,15 @@ body, html {
             transform: rotate(360deg);
         }
     }
+
+    .hover {
+        transition: transform 0.3s ease;
+    }
     
+    .hover:hover {
+        transform: translateY(-2.5px); /* Move the link up 5px on hover */
+    }
+
     /* PARALLAX */
 
         .parallax-container {
@@ -359,14 +367,14 @@ body, html {
         .parallax-bold {
             color: #2B2928;
             font-weight: 600;
-            font-size: 40px;
+            font-size: 35px;
             white-space: nowrap;
         }
 
         .parallax-italic {
             color: #2B2928;
             font-style: italic;
-            font-size: 40px;
+            font-size: 35px;
             white-space: nowrap;
         }
 
@@ -374,7 +382,7 @@ body, html {
             color: #887D7D;
             font-family: "Suisse Int'l Mono";
             letter-spacing: 2px;
-            font-size: 40px;
+            font-size: 35px;
             white-space: nowrap;
         }
 
@@ -383,7 +391,7 @@ body, html {
             font-family: "Suisse Int'l Mono";
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-size: 40px;
+            font-size: 35px;
             white-space: nowrap;
         }
 
@@ -444,7 +452,7 @@ body, html {
         h1 {
             color: #BA4347;
             font-weight: 600;
-            font-size: 35px;
+            font-size: 32px;
         }
 
         p {
