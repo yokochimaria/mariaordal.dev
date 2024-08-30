@@ -87,6 +87,10 @@ body, html {
         width: 100%;
     }
 
+    .accordion-section{
+        margin: 20px 0 20px 0;
+    }
+
 /* SECTION: EXTENDED (KNOCKOFF) BOOTSTRAP BUT NOT */
     .none {
         display: none;
@@ -186,7 +190,6 @@ body, html {
     }
 
     .logo {
-        max-width: 200px;
         padding-bottom: 15px;
     }
 
@@ -255,7 +258,7 @@ body, html {
 
     p {
         color: #2B2928;
-        font-size: 18px;
+        font-size: 16.5px;
         padding-bottom: 25px;
         margin: 0;
     }
@@ -274,7 +277,7 @@ body, html {
         color: #887D7D;
         font-family: "Suisse Int'l Mono";
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         font-size: 24px;
     }
 
@@ -282,7 +285,7 @@ body, html {
         color: #7A6565;
         font-family: "Suisse Int'l Mono";
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         font-size: 13px;
         padding-bottom: 10px;
     }
@@ -408,6 +411,11 @@ body, html {
             cursor: pointer;
         }
 
+        .wrapper-accordion-visible {
+            display: flex; 
+            padding: 0px;
+        }
+
         .visible {
             padding-bottom: 0;
         }
@@ -417,6 +425,7 @@ body, html {
             overflow: hidden;
             transition: max-height 0.5s ease-in-out;
             margin-bottom: 30px;
+            padding: 0px;
         }
 
         .content.short {
